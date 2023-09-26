@@ -1,0 +1,40 @@
+Watching for file changes with StatReloader
+"GET /about_me/ HTTP/1.1" 200 8
+"GET / HTTP/1.1" 200 13
+Not Found: /cc
+"GET /cc HTTP/1.1" 404 2419
+C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\myproject\settings.py changed, reloading.
+INFO 2023-09-27 00:26:11,550 autoreload 36276 36744 Watching for file changes with StatReloader
+INFO 2023-09-27 00:26:16,427 basehttp 36276 25792 "GET / HTTP/1.1" 200 13
+INFO 2023-09-27 00:26:26,289 basehttp 36276 25792 "GET /about_me/ HTTP/1.1" 200 8
+INFO 2023-09-27 00:32:32,253 autoreload 36276 36744 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:32:32,736 autoreload 33544 712 Watching for file changes with StatReloader
+INFO 2023-09-27 00:38:49,629 autoreload 33544 712 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\myproject\settings.py changed, reloading.
+INFO 2023-09-27 00:38:50,116 autoreload 16440 28664 Watching for file changes with StatReloader
+INFO 2023-09-27 00:38:53,360 basehttp 16440 14304 "GET /about_me/ HTTP/1.1" 200 8
+INFO 2023-09-27 00:38:57,901 basehttp 16440 14304 "GET / HTTP/1.1" 200 13
+INFO 2023-09-27 00:41:40,696 autoreload 16440 28664 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:41:41,192 autoreload 33352 22144 Watching for file changes with StatReloader
+INFO 2023-09-27 00:41:47,832 basehttp 33352 27660 "GET /about_me/ HTTP/1.1" 200 8
+INFO 2023-09-27 00:42:16,667 autoreload 33352 22144 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:42:17,117 autoreload 11504 27652 Watching for file changes with StatReloader
+INFO 2023-09-27 00:42:18,562 basehttp 11504 32156 "GET /about_me/ HTTP/1.1" 200 1679
+INFO 2023-09-27 00:42:58,878 autoreload 11504 27652 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:42:59,356 autoreload 2568 15608 Watching for file changes with StatReloader
+INFO 2023-09-27 00:43:00,306 basehttp 2568 36492 "GET /about_me/ HTTP/1.1" 200 1687
+INFO 2023-09-27 00:43:59,487 autoreload 2568 15608 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:43:59,930 autoreload 29152 35464 Watching for file changes with StatReloader
+INFO 2023-09-27 00:44:01,721 basehttp 29152 1336 "GET /about_me/ HTTP/1.1" 200 1667
+INFO 2023-09-27 00:44:41,709 autoreload 29152 35464 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:44:42,175 autoreload 15272 21076 Watching for file changes with StatReloader
+INFO 2023-09-27 00:44:48,067 basehttp 15272 29240 "GET / HTTP/1.1" 200 1716
+INFO 2023-09-27 00:45:48,736 autoreload 15272 21076 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-09-27 00:45:49,174 autoreload 32092 34540 Watching for file changes with StatReloader
+INFO 2023-09-27 00:45:50,035 basehttp 32092 36204 "GET / HTTP/1.1" 200 1704

@@ -1,0 +1,38 @@
+{% extends 'mystore/base.html' %}
+
+{% block content %}
+    <head>
+        <script>
+            function changePage() {
+                var selectElement = document.getElementById("myList");
+                var selectedValue = selectElement.value;
+
+                if (selectedValue == "page1") {
+                    window.location.href = "/orders/1/7/";
+                }
+                else if (selectedValue == "page2") {
+                    window.location.href = "/orders/1/30/";
+                }
+                else if (selectedValue == "page3") {
+                    window.location.href = "/orders/1/365/";
+                }
+                // Добавьте здесь другие условия для изменения страницы в соответствии с вашим списком
+            }
+        </script>
+    </head>
+
+
+        <select id="myList" onchange="changePage()">
+            <option value="page1">Заказы за последнюю неделю</option>
+            <option value="page2">Заказы за последний месяц</option>
+            <option value="page3">Заказы за последний год</option>
+            <!-- Добавьте здесь другие опции вашего выпадающего списка -->
+        </select>
+
+
+    {% for order in orders %}
+
+        <p>{{ order.total_price }}руб. {{ order.date_order }} <a href="/order/{{ order.pk }}">Подробнее...</a></p>
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'mystore/base.html' %}
+
+{% block content %}
+
+    {% for product in products %}
+        <p>{{ product.product_name }} {{ product.price }}</p>
+    {% endfor %}
+    <p>{{ total_price }}</p>
+    <p>{{ date }}</p>
+{% endblock %}

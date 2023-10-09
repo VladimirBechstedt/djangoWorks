@@ -38,3 +38,1119 @@ INFO 2023-09-27 00:44:48,067 basehttp 15272 29240 "GET / HTTP/1.1" 200 1716
 INFO 2023-09-27 00:45:48,736 autoreload 15272 21076 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
 INFO 2023-09-27 00:45:49,174 autoreload 32092 34540 Watching for file changes with StatReloader
 INFO 2023-09-27 00:45:50,035 basehttp 32092 36204 "GET / HTTP/1.1" 200 1704
+INFO 2023-10-05 22:52:53,302 autoreload 34964 18020 Watching for file changes with StatReloader
+INFO 2023-10-05 22:53:01,113 basehttp 34964 35696 "GET / HTTP/1.1" 200 661
+WARNING 2023-10-05 22:53:01,449 log 34964 35696 Not Found: /favicon.ico
+WARNING 2023-10-05 22:53:01,451 basehttp 34964 35696 "GET /favicon.ico HTTP/1.1" 404 2446
+WARNING 2023-10-05 22:53:12,591 log 34964 35696 Not Found: /main
+WARNING 2023-10-05 22:53:12,592 basehttp 34964 35696 "GET /main HTTP/1.1" 404 2425
+WARNING 2023-10-05 22:53:20,680 log 34964 35696 Not Found: /main/
+WARNING 2023-10-05 22:53:20,682 basehttp 34964 35696 "GET /main/ HTTP/1.1" 404 2428
+INFO 2023-10-05 22:53:34,791 basehttp 34964 35696 "GET / HTTP/1.1" 200 661
+INFO 2023-10-05 22:57:07,549 basehttp 34964 35696 "GET /about_me/ HTTP/1.1" 200 661
+INFO 2023-10-05 22:57:12,578 basehttp 34964 35696 "GET /about_me/ HTTP/1.1" 200 661
+ERROR 2023-10-05 23:03:34,765 log 34964 18048 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 11, in main
+    return render(request, "mystore/main.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-10-05 23:03:34,782 basehttp 34964 18048 "GET / HTTP/1.1" 500 134759
+ERROR 2023-10-05 23:03:38,375 log 34964 18048 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 11, in main
+    return render(request, "mystore/main.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-10-05 23:03:38,388 basehttp 34964 18048 "GET / HTTP/1.1" 500 134896
+INFO 2023-10-05 23:07:29,031 basehttp 34964 18048 "GET / HTTP/1.1" 200 661
+INFO 2023-10-05 23:08:39,784 basehttp 34964 18048 "GET / HTTP/1.1" 200 1508
+INFO 2023-10-05 23:08:55,173 basehttp 34964 18048 "GET /about_me/ HTTP/1.1" 200 1482
+INFO 2023-10-05 23:13:11,440 basehttp 34964 18048 "GET /about_me/ HTTP/1.1" 200 1740
+WARNING 2023-10-05 23:13:14,424 log 34964 18048 Not Found: /main/
+WARNING 2023-10-05 23:13:14,425 basehttp 34964 18048 "GET /main/ HTTP/1.1" 404 2428
+INFO 2023-10-05 23:13:45,464 autoreload 34964 18020 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\urls.py changed, reloading.
+INFO 2023-10-05 23:13:46,385 autoreload 38252 34532 Watching for file changes with StatReloader
+INFO 2023-10-05 23:13:46,807 basehttp 38252 25664 "GET /main/ HTTP/1.1" 200 1766
+INFO 2023-10-05 23:13:49,309 basehttp 38252 25664 "GET /about_me/ HTTP/1.1" 200 1740
+INFO 2023-10-05 23:13:50,716 basehttp 38252 25664 "GET /main/ HTTP/1.1" 200 1766
+INFO 2023-10-05 23:13:51,911 basehttp 38252 25664 "GET /about_me/ HTTP/1.1" 200 1740
+INFO 2023-10-05 23:13:53,124 basehttp 38252 25664 "GET /main/ HTTP/1.1" 200 1766
+INFO 2023-10-05 23:13:54,152 basehttp 38252 25664 "GET /about_me/ HTTP/1.1" 200 1740
+INFO 2023-10-05 23:20:43,449 autoreload 38252 34532 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\urls.py changed, reloading.
+INFO 2023-10-05 23:20:44,439 autoreload 8168 20424 Watching for file changes with StatReloader
+INFO 2023-10-05 23:22:54,343 autoreload 8168 20424 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-05 23:22:55,583 autoreload 36116 13120 Watching for file changes with StatReloader
+INFO 2023-10-05 23:26:29,205 autoreload 36116 13120 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-05 23:26:30,093 autoreload 31600 38600 Watching for file changes with StatReloader
+INFO 2023-10-05 23:31:58,932 autoreload 31600 38600 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-05 23:31:59,930 autoreload 19528 38376 Watching for file changes with StatReloader
+WARNING 2023-10-05 23:32:00,624 log 19528 10560 Not Found: /product/
+WARNING 2023-10-05 23:32:00,625 basehttp 19528 10560 "GET /product/?name=%D0%9E%D0%B1%D1%83%D0%B2%D1%8C HTTP/1.1" 404 2679
+WARNING 2023-10-05 23:32:10,154 log 19528 10560 Not Found: /product/
+WARNING 2023-10-05 23:32:10,155 basehttp 19528 10560 "GET /product/?name=%D0%9E%D0%B1%D1%83%D0%B2%D1%8C HTTP/1.1" 404 2679
+INFO 2023-10-05 23:32:19,741 basehttp 19528 10560 "GET /main/ HTTP/1.1" 200 1753
+WARNING 2023-10-05 23:33:10,620 log 19528 10560 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:33:10,621 basehttp 19528 10560 "GET /orders/1/7/ HTTP/1.1" 404 2652
+INFO 2023-10-05 23:33:59,099 autoreload 19528 38376 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-05 23:34:00,647 autoreload 36192 2072 Watching for file changes with StatReloader
+WARNING 2023-10-05 23:34:01,097 log 36192 9428 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:34:01,099 basehttp 36192 9428 "GET /orders/1/7/ HTTP/1.1" 404 2652
+WARNING 2023-10-05 23:34:03,160 log 36192 9428 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:34:03,161 basehttp 36192 9428 "GET /orders/1/7/ HTTP/1.1" 404 2652
+WARNING 2023-10-05 23:34:04,589 log 36192 9428 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:34:04,589 basehttp 36192 9428 "GET /orders/1/7/ HTTP/1.1" 404 2652
+WARNING 2023-10-05 23:34:08,767 log 36192 9428 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:34:08,768 basehttp 36192 9428 "GET /orders/1/7/ HTTP/1.1" 404 2652
+INFO 2023-10-05 23:35:41,962 autoreload 36192 2072 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-05 23:35:42,881 autoreload 37176 37392 Watching for file changes with StatReloader
+WARNING 2023-10-05 23:35:44,263 log 37176 36988 Not Found: /orders/1/7/
+WARNING 2023-10-05 23:35:44,264 basehttp 37176 36988 "GET /orders/1/7/ HTTP/1.1" 404 2652
+INFO 2023-10-05 23:37:25,590 autoreload 37176 37392 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\urls.py changed, reloading.
+INFO 2023-10-05 23:37:26,578 autoreload 18048 26572 Watching for file changes with StatReloader
+INFO 2023-10-05 23:37:28,348 basehttp 18048 38028 "GET /orders/1/7/ HTTP/1.1" 200 920
+INFO 2023-10-05 23:48:50,993 basehttp 18048 31012 "GET /orders/1/7/ HTTP/1.1" 200 966
+INFO 2023-10-05 23:50:08,565 basehttp 18048 31012 "GET /orders/1/7/ HTTP/1.1" 200 1010
+INFO 2023-10-05 23:50:32,134 basehttp 18048 31012 "GET /orders/1/7/ HTTP/1.1" 200 1001
+INFO 2023-10-05 23:59:25,302 basehttp 18048 33716 "GET /orders/1/7/ HTTP/1.1" 200 1022
+INFO 2023-10-06 00:02:45,084 basehttp 18048 33716 "GET /orders/1/7/ HTTP/1.1" 200 1029
+INFO 2023-10-07 11:04:36,930 basehttp 18048 39352 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-07 11:04:37,811 basehttp 18048 39352 "GET /orders/1/7/ HTTP/1.1" 200 1029
+INFO 2023-10-07 11:04:38,925 basehttp 18048 39352 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 20:40:13,830 autoreload 1184 11456 Watching for file changes with StatReloader
+WARNING 2023-10-08 20:40:17,736 log 1184 8004 Not Found: /
+WARNING 2023-10-08 20:40:17,738 basehttp 1184 8004 "GET / HTTP/1.1" 404 2600
+WARNING 2023-10-08 20:40:17,892 log 1184 8004 Not Found: /favicon.ico
+WARNING 2023-10-08 20:40:17,893 basehttp 1184 8004 "GET /favicon.ico HTTP/1.1" 404 2651
+INFO 2023-10-08 20:40:29,717 basehttp 1184 8004 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 20:40:32,741 basehttp 1184 8004 "GET /orders/1/7/ HTTP/1.1" 200 1029
+INFO 2023-10-08 21:01:37,047 basehttp 1184 12264 "GET /main/ HTTP/1.1" 200 1760
+WARNING 2023-10-08 21:01:37,208 log 1184 12264 Not Found: /favicon.ico
+WARNING 2023-10-08 21:01:37,212 basehttp 1184 12264 "GET /favicon.ico HTTP/1.1" 404 2651
+INFO 2023-10-08 21:01:38,740 basehttp 1184 12264 "GET /orders/1/7/ HTTP/1.1" 200 1908
+WARNING 2023-10-08 21:01:41,885 log 1184 12264 Not Found: /orders/1/7/page2.html
+WARNING 2023-10-08 21:01:41,885 basehttp 1184 12264 "GET /orders/1/7/page2.html HTTP/1.1" 404 2681
+INFO 2023-10-08 21:02:34,997 basehttp 1184 12264 "GET /orders/1/7/ HTTP/1.1" 200 1904
+INFO 2023-10-08 21:02:41,765 basehttp 1184 12264 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-08 21:02:44,150 basehttp 1184 12264 "GET /orders/1/7/ HTTP/1.1" 200 1904
+INFO 2023-10-08 21:03:18,027 basehttp 1184 12264 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-08 21:03:19,124 basehttp 1184 12264 "GET /orders/1/7/ HTTP/1.1" 200 1909
+INFO 2023-10-08 21:03:21,688 basehttp 1184 12264 "GET /orders/1/30/ HTTP/1.1" 200 1910
+INFO 2023-10-08 21:03:26,753 basehttp 1184 12264 "GET /orders/1/30/ HTTP/1.1" 200 1910
+INFO 2023-10-08 21:03:29,991 basehttp 1184 12264 "GET /orders/1/30/ HTTP/1.1" 200 1910
+INFO 2023-10-08 21:07:42,344 basehttp 1184 12264 "GET /orders/1/30/ HTTP/1.1" 200 2189
+INFO 2023-10-08 21:07:45,074 basehttp 1184 12264 "GET /orders/1/365/ HTTP/1.1" 200 2190
+INFO 2023-10-08 21:07:54,626 basehttp 1184 12264 "GET /orders/1/30/ HTTP/1.1" 200 2189
+INFO 2023-10-08 21:08:00,439 basehttp 1184 12264 "GET /orders/1/365/ HTTP/1.1" 200 2190
+INFO 2023-10-08 21:10:08,511 autoreload 8424 2208 Watching for file changes with StatReloader
+WARNING 2023-10-08 21:10:10,444 log 8424 8540 Not Found: /
+WARNING 2023-10-08 21:10:10,445 basehttp 8424 8540 "GET / HTTP/1.1" 404 2600
+INFO 2023-10-08 21:10:21,343 basehttp 8424 8540 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 21:10:24,229 basehttp 8424 8540 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 21:10:24,770 basehttp 8424 8540 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-08 21:10:25,380 basehttp 8424 8540 "GET /orders/1/7/ HTTP/1.1" 200 2188
+INFO 2023-10-08 21:10:25,961 basehttp 8424 8540 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-08 21:10:26,967 basehttp 8424 8540 "GET /orders/1/7/ HTTP/1.1" 200 2188
+INFO 2023-10-08 21:10:52,821 basehttp 8424 8540 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 21:10:53,707 basehttp 8424 8540 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-08 21:10:54,556 basehttp 8424 8540 "GET /orders/1/7/ HTTP/1.1" 200 2188
+INFO 2023-10-08 21:11:06,182 basehttp 8424 8540 "GET /orders/1/365/ HTTP/1.1" 200 2190
+INFO 2023-10-08 22:05:23,291 autoreload 13920 9368 Watching for file changes with StatReloader
+INFO 2023-10-08 22:22:38,445 autoreload 13920 9368 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-08 22:22:39,435 autoreload 11892 8972 Watching for file changes with StatReloader
+WARNING 2023-10-08 22:22:44,685 log 11892 7688 Not Found: /
+WARNING 2023-10-08 22:22:44,687 basehttp 11892 7688 "GET / HTTP/1.1" 404 2600
+INFO 2023-10-08 22:22:52,507 basehttp 11892 7688 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-08 22:22:54,259 basehttp 11892 7688 "GET /orders/1/7/ HTTP/1.1" 200 2213
+INFO 2023-10-08 22:29:03,429 basehttp 11892 12296 "GET /orders/1/7/ HTTP/1.1" 200 2227
+INFO 2023-10-08 23:55:29,081 autoreload 11892 8972 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-08 23:55:29,775 autoreload 6208 7876 Watching for file changes with StatReloader
+INFO 2023-10-09 10:27:20,179 autoreload 6208 7876 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 10:27:20,995 autoreload 15168 11516 Watching for file changes with StatReloader
+INFO 2023-10-09 14:11:02,750 autoreload 16056 15544 Watching for file changes with StatReloader
+INFO 2023-10-09 14:11:09,179 basehttp 16056 19000 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-09 14:11:12,814 basehttp 16056 19000 "GET /about_me/ HTTP/1.1" 200 1734
+ERROR 2023-10-09 14:11:14,079 log 16056 19000 Internal Server Error: /orders/1/7/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 25, in orders
+    orders = Order.objects.filter(customer=users, date_order__date__gte=d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1305, in build_lookup
+    lhs = self.try_transform(lhs, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'date' for DateField or join on the field not permitted.
+ERROR 2023-10-09 14:11:14,082 basehttp 16056 19000 "GET /orders/1/7/ HTTP/1.1" 500 118208
+INFO 2023-10-09 14:16:56,736 autoreload 16056 15544 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:16:57,453 autoreload 12592 19224 Watching for file changes with StatReloader
+INFO 2023-10-09 14:17:02,427 basehttp 12592 11220 "GET /orders/1/7/ HTTP/1.1" 200 2968
+INFO 2023-10-09 14:17:37,989 basehttp 12592 11220 "GET /orders/1/30/ HTTP/1.1" 200 2969
+INFO 2023-10-09 14:17:40,201 basehttp 12592 11220 "GET /orders/1/365/ HTTP/1.1" 200 2970
+INFO 2023-10-09 14:17:42,519 basehttp 12592 11220 "GET /orders/1/30/ HTTP/1.1" 200 2969
+INFO 2023-10-09 14:18:25,864 autoreload 12592 19224 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:18:26,355 autoreload 16928 13960 Watching for file changes with StatReloader
+ERROR 2023-10-09 14:18:27,636 log 16928 17072 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 25, in orders
+    orders = Order.objects.filter(date_order__date__dte=d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1305, in build_lookup
+    lhs = self.try_transform(lhs, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'date' for DateField or join on the field not permitted.
+ERROR 2023-10-09 14:18:27,636 basehttp 16928 17072 "GET /orders/1/30/ HTTP/1.1" 500 117386
+INFO 2023-10-09 14:18:43,434 autoreload 16928 13960 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:18:43,963 autoreload 13164 10104 Watching for file changes with StatReloader
+ERROR 2023-10-09 14:18:44,390 log 13164 1648 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 25, in orders
+    orders = Order.objects.filter(date_order__dte=d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1312, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'dte' for DateField or join on the field not permitted, perhaps you meant lte or gte?
+ERROR 2023-10-09 14:18:44,394 basehttp 13164 1648 "GET /orders/1/30/ HTTP/1.1" 500 117343
+INFO 2023-10-09 14:18:59,849 autoreload 13164 10104 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:19:00,272 autoreload 15876 11616 Watching for file changes with StatReloader
+INFO 2023-10-09 14:19:01,243 basehttp 15876 2616 "GET /orders/1/30/ HTTP/1.1" 200 2969
+INFO 2023-10-09 14:19:19,215 autoreload 15876 11616 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:19:19,655 autoreload 19236 2264 Watching for file changes with StatReloader
+ERROR 2023-10-09 14:19:22,013 log 19236 8656 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 25, in orders
+    orders = Order.objects.filter(date_order__date__gt=d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1305, in build_lookup
+    lhs = self.try_transform(lhs, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'date' for DateField or join on the field not permitted.
+ERROR 2023-10-09 14:19:22,013 basehttp 19236 8656 "GET /orders/1/30/ HTTP/1.1" 500 117370
+INFO 2023-10-09 14:20:34,448 autoreload 19236 2264 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 14:20:35,195 autoreload 13512 19084 Watching for file changes with StatReloader
+INFO 2023-10-09 14:20:36,274 basehttp 13512 16720 "GET /orders/1/30/ HTTP/1.1" 200 2969
+ERROR 2023-10-09 14:23:17,075 log 13512 16720 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 31, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 839, in do_for
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for product in {{ order.products }}
+ERROR 2023-10-09 14:23:17,090 basehttp 13512 16720 "GET /orders/1/30/ HTTP/1.1" 500 197850
+INFO 2023-10-09 14:24:46,119 basehttp 13512 16720 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 14:50:08,795 autoreload 16336 14424 Watching for file changes with StatReloader
+INFO 2023-10-09 14:50:13,104 basehttp 16336 5376 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 14:50:19,179 basehttp 16336 5376 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 17:01:51,376 autoreload 2940 11312 Watching for file changes with StatReloader
+INFO 2023-10-09 17:01:54,107 basehttp 2940 12784 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 17:10:50,012 autoreload 18684 11028 Watching for file changes with StatReloader
+INFO 2023-10-09 17:10:53,339 basehttp 18684 18324 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 17:10:55,338 basehttp 18684 18324 "GET /orders/1/30/ HTTP/1.1" 200 3109
+INFO 2023-10-09 17:16:04,150 autoreload 18684 11028 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:16:05,173 autoreload 11552 10576 Watching for file changes with StatReloader
+ERROR 2023-10-09 17:16:05,948 log 11552 12056 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 33, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Order' object is not iterable
+ERROR 2023-10-09 17:16:05,965 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 500 158233
+ERROR 2023-10-09 17:17:36,018 log 11552 12056 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 33, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Order' object is not iterable
+ERROR 2023-10-09 17:17:36,033 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 500 158260
+ERROR 2023-10-09 17:18:37,343 log 11552 12056 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 33, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Order' object is not iterable
+ERROR 2023-10-09 17:18:37,355 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 500 158334
+ERROR 2023-10-09 17:19:47,671 log 11552 12056 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 33, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Order' object is not iterable
+ERROR 2023-10-09 17:19:47,681 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 500 158572
+ERROR 2023-10-09 17:20:07,114 log 11552 12056 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 33, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 39: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-10-09 17:20:07,131 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 500 175712
+INFO 2023-10-09 17:20:18,395 basehttp 11552 12056 "GET /orders/1/30/ HTTP/1.1" 200 2490
+INFO 2023-10-09 17:24:54,251 autoreload 11552 10576 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:24:55,133 autoreload 8820 6388 Watching for file changes with StatReloader
+ERROR 2023-10-09 17:24:55,549 log 8820 1628 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 26, in orders
+    product = orders.products.all()
+              ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-09 17:24:55,552 basehttp 8820 1628 "GET /orders/1/30/ HTTP/1.1" 500 69807
+INFO 2023-10-09 17:28:41,052 autoreload 8820 6388 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:28:41,888 autoreload 1656 17104 Watching for file changes with StatReloader
+ERROR 2023-10-09 17:28:42,933 log 1656 15896 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 26, in orders
+    product = [i for i in orders.products.all()]
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-09 17:28:42,936 basehttp 1656 15896 "GET /orders/1/30/ HTTP/1.1" 500 69707
+INFO 2023-10-09 17:31:47,731 autoreload 1656 17104 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:31:48,775 autoreload 13420 16840 Watching for file changes with StatReloader
+INFO 2023-10-09 17:35:02,860 autoreload 13420 16840 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:35:03,884 autoreload 6200 2128 Watching for file changes with StatReloader
+ERROR 2023-10-09 17:35:05,294 log 6200 2104 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 29, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 839, in do_for
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for prod in {{ order.products }}
+ERROR 2023-10-09 17:35:05,308 basehttp 6200 2104 "GET /orders/1/30/ HTTP/1.1" 500 196356
+ERROR 2023-10-09 17:45:31,427 log 6200 5432 Internal Server Error: /orders/1/30/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 29, in orders
+    return render(request, "mystore/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 38: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-10-09 17:45:31,447 basehttp 6200 5432 "GET /orders/1/30/ HTTP/1.1" 500 187820
+INFO 2023-10-09 17:46:12,680 basehttp 6200 5432 "GET /orders/1/30/ HTTP/1.1" 200 3082
+WARNING 2023-10-09 17:46:17,091 log 6200 5432 Not Found: /order/1/1
+WARNING 2023-10-09 17:46:17,096 basehttp 6200 5432 "GET /order/1/1 HTTP/1.1" 404 2645
+WARNING 2023-10-09 17:46:25,565 log 6200 5432 Not Found: /order/1/6
+WARNING 2023-10-09 17:46:25,567 basehttp 6200 5432 "GET /order/1/6 HTTP/1.1" 404 2645
+WARNING 2023-10-09 17:46:29,340 log 6200 5432 Not Found: /order/1/9
+WARNING 2023-10-09 17:46:29,345 basehttp 6200 5432 "GET /order/1/9 HTTP/1.1" 404 2645
+INFO 2023-10-09 17:58:00,734 autoreload 6200 2128 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 17:58:01,751 autoreload 12800 18780 Watching for file changes with StatReloader
+INFO 2023-10-09 17:58:02,395 basehttp 12800 18932 "GET /orders/1/30/ HTTP/1.1" 200 3062
+INFO 2023-10-09 17:58:04,350 basehttp 12800 18932 "GET /order/1 HTTP/1.1" 301 0
+ERROR 2023-10-09 17:58:04,407 log 12800 11152 Internal Server Error: /order/1/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 34, in order
+    products = order.products.all()
+               ^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-10-09 17:58:04,417 basehttp 12800 11152 "GET /order/1/ HTTP/1.1" 500 68755
+INFO 2023-10-09 18:01:04,529 autoreload 12800 18780 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 18:01:05,560 autoreload 6360 17000 Watching for file changes with StatReloader
+INFO 2023-10-09 18:01:05,967 basehttp 6360 12920 "GET /order/1/ HTTP/1.1" 200 2181
+INFO 2023-10-09 18:01:16,793 basehttp 6360 12920 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:01:18,521 basehttp 6360 12920 "GET /order/2 HTTP/1.1" 301 0
+INFO 2023-10-09 18:01:18,530 basehttp 6360 14548 "GET /order/2/ HTTP/1.1" 200 2181
+INFO 2023-10-09 18:01:37,246 autoreload 6360 17000 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 18:01:38,211 autoreload 13420 1608 Watching for file changes with StatReloader
+ERROR 2023-10-09 18:01:39,394 log 13420 13020 Internal Server Error: /order/2/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 39, in order
+    return render(request, "mystore/order.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: mystore/order.html
+ERROR 2023-10-09 18:01:39,400 basehttp 13420 13020 "GET /order/2/ HTTP/1.1" 500 85262
+INFO 2023-10-09 18:04:25,541 autoreload 13420 1608 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-09 18:04:26,587 autoreload 16832 12504 Watching for file changes with StatReloader
+INFO 2023-10-09 18:04:29,109 basehttp 16832 3384 "GET /order/2/ HTTP/1.1" 200 1244
+INFO 2023-10-09 18:04:32,308 basehttp 16832 3384 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:04:40,611 basehttp 16832 3384 "GET /order/6 HTTP/1.1" 301 0
+INFO 2023-10-09 18:04:40,624 basehttp 16832 14820 "GET /order/6/ HTTP/1.1" 200 1244
+INFO 2023-10-09 18:04:54,083 basehttp 16832 14820 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:04:55,799 basehttp 16832 14820 "GET /order/9 HTTP/1.1" 301 0
+INFO 2023-10-09 18:04:55,810 basehttp 16832 15488 "GET /order/9/ HTTP/1.1" 200 1203
+INFO 2023-10-09 18:04:59,995 basehttp 16832 15488 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:05:01,158 basehttp 16832 15488 "GET /order/1/ HTTP/1.1" 200 1244
+INFO 2023-10-09 18:05:05,506 basehttp 16832 15488 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:05:06,794 basehttp 16832 15488 "GET /order/10 HTTP/1.1" 301 0
+INFO 2023-10-09 18:05:06,805 basehttp 16832 7276 "GET /order/10/ HTTP/1.1" 200 1162
+INFO 2023-10-09 18:05:13,282 basehttp 16832 7276 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:06:01,977 basehttp 16832 7276 "GET /order/3 HTTP/1.1" 301 0
+INFO 2023-10-09 18:06:01,996 basehttp 16832 17396 "GET /order/3/ HTTP/1.1" 200 1131
+INFO 2023-10-09 18:06:40,833 basehttp 16832 17396 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:06:41,872 basehttp 16832 17396 "GET /order/2/ HTTP/1.1" 200 1216
+INFO 2023-10-09 18:06:51,739 basehttp 16832 17396 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:06:53,763 basehttp 16832 17396 "GET /order/7 HTTP/1.1" 301 0
+INFO 2023-10-09 18:06:53,774 basehttp 16832 5072 "GET /order/7/ HTTP/1.1" 200 1142
+INFO 2023-10-09 18:06:56,478 basehttp 16832 5072 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:06:57,587 basehttp 16832 5072 "GET /order/1/ HTTP/1.1" 200 1216
+INFO 2023-10-09 18:07:02,842 basehttp 16832 5072 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 18:07:04,218 basehttp 16832 5072 "GET /order/8 HTTP/1.1" 301 0
+INFO 2023-10-09 18:07:04,229 basehttp 16832 15712 "GET /order/8/ HTTP/1.1" 200 1179
+INFO 2023-10-09 23:32:22,429 basehttp 16832 20040 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-09 23:32:23,723 basehttp 16832 20040 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-09 23:32:24,802 basehttp 16832 20040 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:32:29,883 basehttp 16832 20040 "GET /orders/1/30/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:32:32,074 basehttp 16832 20040 "GET /orders/1/365/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:32:43,169 basehttp 16832 20040 "GET /order/7/ HTTP/1.1" 200 1142
+INFO 2023-10-09 23:32:49,072 basehttp 16832 20040 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:32:50,981 basehttp 16832 20040 "GET /order/10/ HTTP/1.1" 200 1142
+INFO 2023-10-09 23:32:52,540 basehttp 16832 20040 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:32:58,770 basehttp 16832 20040 "GET /order/5 HTTP/1.1" 301 0
+INFO 2023-10-09 23:32:58,782 basehttp 16832 2348 "GET /order/5/ HTTP/1.1" 200 1253
+INFO 2023-10-09 23:33:06,628 basehttp 16832 2348 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-09 23:33:10,974 basehttp 16832 2348 "GET /orders/1/7/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:33:16,517 basehttp 16832 2348 "GET /orders/1/365/ HTTP/1.1" 200 3062
+INFO 2023-10-09 23:45:35,637 autoreload 18028 9680 Watching for file changes with StatReloader
+INFO 2023-10-09 23:45:39,699 basehttp 18028 15752 "GET /orders/1/365/ HTTP/1.1" 200 2974
+INFO 2023-10-09 23:45:43,851 basehttp 18028 15752 "GET /orders/1/365/ HTTP/1.1" 200 2974
+INFO 2023-10-09 23:45:58,378 basehttp 18028 15752 "GET /orders/1/1000/ HTTP/1.1" 200 3063
+INFO 2023-10-09 23:49:28,633 autoreload 4520 20292 Watching for file changes with StatReloader
+INFO 2023-10-09 23:49:36,482 basehttp 4520 20112 "GET /orders/1/1000/ HTTP/1.1" 200 3068
+INFO 2023-10-09 23:49:41,512 basehttp 4520 20112 "GET /orders/1/30/ HTTP/1.1" 200 2890
+INFO 2023-10-09 23:49:43,956 basehttp 4520 20112 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-09 23:49:45,076 basehttp 4520 20112 "GET /orders/1/7/ HTTP/1.1" 200 2534
+INFO 2023-10-09 23:49:49,837 basehttp 4520 20112 "GET /orders/1/30/ HTTP/1.1" 200 2890
+INFO 2023-10-09 23:49:52,649 basehttp 4520 20112 "GET /orders/1/365/ HTTP/1.1" 200 3068
+INFO 2023-10-09 23:51:19,717 basehttp 4520 20112 "GET /orders/1/365/ HTTP/1.1" 200 3138

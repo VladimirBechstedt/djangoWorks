@@ -1154,3 +1154,148 @@ INFO 2023-10-09 23:49:45,076 basehttp 4520 20112 "GET /orders/1/7/ HTTP/1.1" 200
 INFO 2023-10-09 23:49:49,837 basehttp 4520 20112 "GET /orders/1/30/ HTTP/1.1" 200 2890
 INFO 2023-10-09 23:49:52,649 basehttp 4520 20112 "GET /orders/1/365/ HTTP/1.1" 200 3068
 INFO 2023-10-09 23:51:19,717 basehttp 4520 20112 "GET /orders/1/365/ HTTP/1.1" 200 3138
+INFO 2023-10-13 18:11:13,134 autoreload 19696 11004 Watching for file changes with StatReloader
+INFO 2023-10-13 18:12:19,375 autoreload 12040 19064 Watching for file changes with StatReloader
+INFO 2023-10-13 18:12:56,711 autoreload 12040 19064 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\urls.py changed, reloading.
+INFO 2023-10-13 18:12:57,116 autoreload 7244 7560 Watching for file changes with StatReloader
+INFO 2023-10-13 18:14:16,906 autoreload 11968 17108 Watching for file changes with StatReloader
+INFO 2023-10-13 18:14:21,409 basehttp 11968 16208 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-13 18:15:02,831 autoreload 11968 17108 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\urls.py changed, reloading.
+INFO 2023-10-13 18:15:03,251 autoreload 13860 4376 Watching for file changes with StatReloader
+INFO 2023-10-13 18:15:11,970 basehttp 13860 19180 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-13 18:15:12,765 basehttp 13860 19180 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-13 18:15:13,799 basehttp 13860 19180 "GET /orders/1/7/ HTTP/1.1" 200 2372
+ERROR 2023-10-13 18:15:16,145 log 13860 19180 Internal Server Error: /order/9/
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: mystore_product.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py", line 41, in order
+    return render(request, "mystore/order.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: mystore_product.image
+ERROR 2023-10-13 18:15:16,155 basehttp 13860 19180 "GET /order/9/ HTTP/1.1" 500 215929
+INFO 2023-10-13 18:20:36,690 autoreload 19592 3064 Watching for file changes with StatReloader
+INFO 2023-10-13 18:20:41,443 basehttp 19592 10248 "GET /order/9/ HTTP/1.1" 200 1463
+INFO 2023-10-13 18:20:45,696 basehttp 19592 10248 "GET /product/2/ HTTP/1.1" 200 939
+INFO 2023-10-13 18:21:49,540 autoreload 19592 3064 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-13 18:21:50,022 autoreload 652 2728 Watching for file changes with StatReloader
+INFO 2023-10-13 18:21:53,793 basehttp 652 19888 "GET /product/2/ HTTP/1.1" 200 1569
+INFO 2023-10-13 18:23:49,774 basehttp 652 19888 "POST /upload_image/2/ HTTP/1.1" 200 1579
+WARNING 2023-10-13 18:23:49,822 log 652 19888 Not Found: /proba.jpg
+WARNING 2023-10-13 18:23:49,824 basehttp 652 19888 "GET /proba.jpg HTTP/1.1" 404 3215
+INFO 2023-10-13 18:26:05,322 autoreload 652 2728 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\views.py changed, reloading.
+INFO 2023-10-13 18:26:05,796 autoreload 19056 16128 Watching for file changes with StatReloader
+INFO 2023-10-13 18:26:21,475 basehttp 19056 9828 "POST /upload_image/2/ HTTP/1.1" 200 1593
+WARNING 2023-10-13 18:26:21,527 log 19056 9828 Not Found: /media/proba.jpg
+WARNING 2023-10-13 18:26:21,527 basehttp 19056 9828 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-13 18:27:29,199 basehttp 19056 9828 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-13 18:27:30,941 basehttp 19056 9828 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-13 18:27:32,932 basehttp 19056 9828 "GET /order/9/ HTTP/1.1" 200 1463
+INFO 2023-10-13 18:27:34,609 basehttp 19056 9828 "GET /product/2/ HTTP/1.1" 200 1570
+INFO 2023-10-13 18:27:47,460 basehttp 19056 9828 "POST /upload_image/2/ HTTP/1.1" 200 1618
+WARNING 2023-10-13 18:27:47,504 log 19056 9828 Not Found: /media/proba.jpg
+WARNING 2023-10-13 18:27:47,504 basehttp 19056 9828 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-13 18:30:00,292 basehttp 19056 9828 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-13 18:30:01,529 basehttp 19056 9828 "GET /order/9/ HTTP/1.1" 200 1463
+INFO 2023-10-13 18:30:02,985 basehttp 19056 9828 "GET /product/2/ HTTP/1.1" 200 1570
+INFO 2023-10-13 18:30:10,414 basehttp 19056 9828 "POST /upload_image/2/ HTTP/1.1" 200 1618
+WARNING 2023-10-13 18:30:10,465 log 19056 9828 Not Found: /media/proba.jpg
+WARNING 2023-10-13 18:30:10,466 basehttp 19056 9828 "GET /media/proba.jpg HTTP/1.1" 404 3233

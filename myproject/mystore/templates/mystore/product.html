@@ -1,10 +1,17 @@
 {% extends 'mystore/base.html' %}
 
 {% block content %}
+    <img src="{{ product.image }}">
+    <h1>{{ product.product_name }} {{ product.image }}</h1>
+    <h3>Описание:</h3>
+    <p>{{ product.description }}</p>
+    <p>Цена {{ product.price }}руб.</p>
+    <p>{{ product.date_added }}</p>
+    <h2>Загрузите изображение</h2>
+    <form action="/upload_image/{{ product.pk }}/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit">Загрузить</button>
+    </form>
 
-    {% for product in products %}
-        <p>{{ product.product_name }} {{ product.price }}</p>
-    {% endfor %}
-    <p>{{ total_price }}</p>
-    <p>{{ date }}</p>
 {% endblock %}

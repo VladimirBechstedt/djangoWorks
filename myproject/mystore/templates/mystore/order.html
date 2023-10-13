@@ -1,0 +1,11 @@
+{% extends 'mystore/base.html' %}
+
+{% block content %}
+
+    {% for product in products %}
+        <p>{{ product.product_name }} {{ product.price }}<a href="/product/{{ product.pk }}/">Подробнее...</a></p>
+    {% endfor %}
+    <p>{{ total_price }}</p>
+    <p>{{ date }}</p>
+
+{% endblock %}

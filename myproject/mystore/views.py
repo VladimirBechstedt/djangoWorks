@@ -57,6 +57,7 @@ def upload_image(request, pk):
 
             # product = Product.objects.get(pk=pk)
             product.image = f'../../../media/{image.name}'
+            product.save()
 
             fs = FileSystemStorage()
             fs.save(image.name, image)

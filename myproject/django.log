@@ -1299,3 +1299,149 @@ INFO 2023-10-13 18:30:02,985 basehttp 19056 9828 "GET /product/2/ HTTP/1.1" 200 
 INFO 2023-10-13 18:30:10,414 basehttp 19056 9828 "POST /upload_image/2/ HTTP/1.1" 200 1618
 WARNING 2023-10-13 18:30:10,465 log 19056 9828 Not Found: /media/proba.jpg
 WARNING 2023-10-13 18:30:10,466 basehttp 19056 9828 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-13 21:43:43,367 autoreload 9724 14672 Watching for file changes with StatReloader
+INFO 2023-10-13 21:43:50,304 basehttp 9724 7468 "GET /main/ HTTP/1.1" 200 1760
+WARNING 2023-10-13 21:43:50,483 log 9724 7468 Not Found: /favicon.ico
+WARNING 2023-10-13 21:43:50,485 basehttp 9724 7468 "GET /favicon.ico HTTP/1.1" 404 3221
+INFO 2023-10-13 21:43:55,185 basehttp 9724 7468 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-13 21:43:57,025 basehttp 9724 7468 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-13 21:44:03,506 basehttp 9724 7468 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-13 21:44:05,378 basehttp 9724 7468 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-13 21:44:08,572 basehttp 9724 7468 "GET /orders/1/365/ HTTP/1.1" 200 3138
+INFO 2023-10-13 21:44:14,800 basehttp 9724 7468 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-13 21:44:19,620 basehttp 9724 7468 "GET /order/9/ HTTP/1.1" 200 1463
+INFO 2023-10-13 21:44:22,225 basehttp 9724 7468 "GET /product/2/ HTTP/1.1" 200 1570
+INFO 2023-10-13 21:44:32,658 basehttp 9724 7468 "POST /upload_image/2/ HTTP/1.1" 200 1619
+WARNING 2023-10-13 21:44:32,736 log 9724 7468 Not Found: /media/proba.jpg
+WARNING 2023-10-13 21:44:32,737 basehttp 9724 7468 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-13 21:44:37,000 basehttp 9724 7468 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-13 21:44:38,956 basehttp 9724 7468 "GET /order/9/ HTTP/1.1" 200 1463
+INFO 2023-10-13 21:44:40,563 basehttp 9724 7468 "GET /product/2/ HTTP/1.1" 200 1619
+WARNING 2023-10-13 21:44:40,620 log 9724 7468 Not Found: /media/proba.jpg
+WARNING 2023-10-13 21:44:40,621 basehttp 9724 7468 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-13 21:45:15,918 basehttp 9724 7468 "POST /upload_image/2/ HTTP/1.1" 200 1619
+WARNING 2023-10-13 21:45:16,061 log 9724 7468 Not Found: /media/proba.jpg
+WARNING 2023-10-13 21:45:16,064 basehttp 9724 7468 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-15 19:32:25,709 autoreload 11472 12252 Watching for file changes with StatReloader
+INFO 2023-10-15 19:32:26,177 basehttp 11472 16304 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-15 19:32:29,197 basehttp 11472 16304 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-15 19:32:31,103 basehttp 11472 16304 "GET /main/ HTTP/1.1" 200 1760
+INFO 2023-10-15 19:32:31,799 basehttp 11472 16304 "GET /about_me/ HTTP/1.1" 200 1734
+INFO 2023-10-15 19:32:33,771 basehttp 11472 16304 "GET /orders/1/7/ HTTP/1.1" 200 2372
+INFO 2023-10-15 19:32:41,358 basehttp 11472 16304 "GET /orders/1/30/ HTTP/1.1" 200 2946
+INFO 2023-10-15 19:32:43,814 basehttp 11472 16304 "GET /orders/1/365/ HTTP/1.1" 200 3138
+INFO 2023-10-15 19:32:46,136 basehttp 11472 16304 "GET /order/1/ HTTP/1.1" 200 1548
+INFO 2023-10-15 19:32:48,124 basehttp 11472 16304 "GET /product/1/ HTTP/1.1" 200 1570
+INFO 2023-10-15 19:32:59,223 basehttp 11472 16304 "POST /upload_image/1/ HTTP/1.1" 200 1619
+WARNING 2023-10-15 19:32:59,300 log 11472 16304 Not Found: /media/proba.jpg
+WARNING 2023-10-15 19:32:59,300 basehttp 11472 16304 "GET /media/proba.jpg HTTP/1.1" 404 3233
+INFO 2023-10-15 20:27:54,351 autoreload 12420 17836 Watching for file changes with StatReloader
+INFO 2023-10-15 20:28:05,372 basehttp 12420 16968 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-15 20:28:05,501 basehttp 12420 16968 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-15 20:28:05,535 basehttp 12420 16968 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,541 basehttp 12420 13660 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,549 basehttp 12420 16968 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,550 basehttp 12420 4604 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,553 basehttp 12420 12900 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,559 basehttp 12420 16968 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:05,567 basehttp 12420 4604 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-10-15 20:28:17,551 basehttp 12420 4604 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-15 20:28:17,581 basehttp 12420 4604 "GET /admin/ HTTP/1.1" 200 5852
+INFO 2023-10-15 20:28:17,641 basehttp 12420 4604 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-10-15 20:28:17,654 basehttp 12420 16968 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-15 20:28:17,655 basehttp 12420 4604 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-10-15 22:23:49,244 autoreload 12420 17836 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:23:50,298 autoreload 19172 5008 Watching for file changes with StatReloader
+INFO 2023-10-15 22:24:50,423 autoreload 19172 5008 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:24:51,301 autoreload 4108 17616 Watching for file changes with StatReloader
+INFO 2023-10-15 22:25:34,644 basehttp 4108 10192 "GET /admin/ HTTP/1.1" 200 7423
+INFO 2023-10-15 22:25:38,577 basehttp 4108 10192 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:25:38,684 basehttp 4108 16608 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:25:38,900 basehttp 4108 10192 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2023-10-15 22:25:38,940 basehttp 4108 10192 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-10-15 22:25:38,980 basehttp 4108 10192 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-10-15 22:25:39,005 basehttp 4108 3208 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-10-15 22:25:39,012 basehttp 4108 16816 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-10-15 22:25:39,031 basehttp 4108 1824 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-10-15 22:25:39,032 basehttp 4108 16608 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-15 22:25:39,070 basehttp 4108 10192 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-15 22:25:39,099 basehttp 4108 7008 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-10-15 22:25:39,294 basehttp 4108 10192 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-10-15 22:25:39,379 basehttp 4108 7008 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-15 22:25:45,105 basehttp 4108 7008 "GET /admin/mystore/order/1/change/ HTTP/1.1" 200 13205
+INFO 2023-10-15 22:25:45,200 basehttp 4108 7008 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-10-15 22:25:45,223 basehttp 4108 10192 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:25:45,241 basehttp 4108 1824 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO 2023-10-15 22:25:45,243 basehttp 4108 7008 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-10-15 22:25:45,264 basehttp 4108 7008 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-10-15 22:25:45,270 basehttp 4108 1824 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-10-15 22:26:09,372 basehttp 4108 1824 "GET /admin/mystore/product/ HTTP/1.1" 200 11683
+INFO 2023-10-15 22:26:09,448 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:26:11,581 basehttp 4108 1824 "GET /admin/mystore/product/1/change/ HTTP/1.1" 200 12279
+INFO 2023-10-15 22:26:11,674 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:26:17,603 basehttp 4108 1824 "GET /admin/mystore/product/1/change/media/proba.jpg HTTP/1.1" 301 0
+INFO 2023-10-15 22:26:17,617 basehttp 4108 1824 "GET /admin/mystore/product/1/change/media/proba.jpg/ HTTP/1.1" 302 0
+INFO 2023-10-15 22:26:17,637 basehttp 4108 1824 "GET /admin/mystore/product/1/change/media/proba.jpg/change/ HTTP/1.1" 302 0
+INFO 2023-10-15 22:26:17,675 basehttp 4108 1824 "GET /admin/ HTTP/1.1" 200 7649
+INFO 2023-10-15 22:26:17,779 basehttp 4108 1824 "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2023-10-15 22:26:29,560 basehttp 4108 1824 "GET /admin/mystore/user/ HTTP/1.1" 200 9663
+INFO 2023-10-15 22:26:29,644 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:26:34,716 basehttp 4108 1824 "GET /admin/mystore/user/1/change/ HTTP/1.1" 200 11480
+INFO 2023-10-15 22:26:34,783 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:26:50,197 basehttp 4108 1824 "GET /admin/mystore/user/1/history/ HTTP/1.1" 200 7426
+INFO 2023-10-15 22:26:58,742 basehttp 4108 1824 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:26:58,843 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:01,491 basehttp 4108 1824 "GET /admin/mystore/order/1/change/ HTTP/1.1" 200 13205
+INFO 2023-10-15 22:27:01,599 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:02,920 basehttp 4108 1824 "GET /admin/mystore/order/1/history/ HTTP/1.1" 200 7432
+INFO 2023-10-15 22:27:05,505 basehttp 4108 1824 "GET /admin/mystore/product/ HTTP/1.1" 200 11683
+INFO 2023-10-15 22:27:05,598 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:07,174 basehttp 4108 1824 "GET /admin/mystore/product/7/change/ HTTP/1.1" 200 12152
+INFO 2023-10-15 22:27:07,255 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:14,138 basehttp 4108 1824 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:27:14,190 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:15,925 basehttp 4108 1824 "GET /admin/mystore/order/8/change/ HTTP/1.1" 200 13196
+INFO 2023-10-15 22:27:16,018 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:28,178 basehttp 4108 1824 "GET /admin/mystore/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7043
+INFO 2023-10-15 22:27:28,245 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:38,076 basehttp 4108 1824 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:27:38,175 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:40,071 basehttp 4108 1824 "GET /admin/mystore/order/5/change/ HTTP/1.1" 200 13214
+INFO 2023-10-15 22:27:40,122 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:45,419 basehttp 4108 1824 "GET /admin/mystore/user/1/change/?_to_field=id HTTP/1.1" 200 11529
+INFO 2023-10-15 22:27:45,512 basehttp 4108 1824 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:27:53,698 basehttp 4108 1824 "GET /admin/mystore/ HTTP/1.1" 200 6190
+INFO 2023-10-15 22:27:56,142 basehttp 4108 1824 "GET /admin/ HTTP/1.1" 200 7423
+INFO 2023-10-15 22:50:44,417 autoreload 4108 17616 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:50:45,187 autoreload 15540 18028 Watching for file changes with StatReloader
+INFO 2023-10-15 22:50:45,593 basehttp 15540 16276 "GET /admin/ HTTP/1.1" 200 7423
+INFO 2023-10-15 22:50:47,084 basehttp 15540 16276 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:50:47,145 basehttp 15540 16276 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:51:30,334 autoreload 15540 18028 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:51:31,433 autoreload 6308 17056 Watching for file changes with StatReloader
+INFO 2023-10-15 22:51:31,923 basehttp 6308 10072 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:51:32,008 basehttp 6308 10072 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:52:06,056 autoreload 6308 17056 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:52:07,217 autoreload 17404 15328 Watching for file changes with StatReloader
+INFO 2023-10-15 22:52:07,655 basehttp 17404 3608 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:52:07,715 basehttp 17404 3608 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:52:58,422 autoreload 17404 15328 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:52:59,642 autoreload 18284 9428 Watching for file changes with StatReloader
+INFO 2023-10-15 22:52:59,998 basehttp 18284 18924 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:53:00,057 basehttp 18284 18924 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:53:04,240 basehttp 18284 18924 "GET /admin/mystore/order/6/change/ HTTP/1.1" 200 13205
+INFO 2023-10-15 22:53:04,321 basehttp 18284 18924 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:54:04,143 autoreload 18284 9428 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:54:04,965 autoreload 5652 8792 Watching for file changes with StatReloader
+INFO 2023-10-15 22:54:07,604 basehttp 5652 7712 "GET /admin/mystore/order/ HTTP/1.1" 200 11625
+INFO 2023-10-15 22:54:07,678 basehttp 5652 7712 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:54:33,038 autoreload 5652 8792 C:\Users\Владимир\Documents\проекты в питоне\djangoWorks\myproject\mystore\admin.py changed, reloading.
+INFO 2023-10-15 22:54:34,014 autoreload 16844 2580 Watching for file changes with StatReloader
+INFO 2023-10-15 22:54:35,292 basehttp 16844 15424 "GET /admin/mystore/order/ HTTP/1.1" 200 13697
+INFO 2023-10-15 22:54:35,386 basehttp 16844 15424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:54:44,622 basehttp 16844 15424 "GET /admin/mystore/order/?date_order__gte=2023-10-15&date_order__lt=2023-10-16 HTTP/1.1" 200 11523
+INFO 2023-10-15 22:54:44,674 basehttp 16844 15424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:54:46,517 basehttp 16844 15424 "GET /admin/mystore/order/?date_order__gte=2023-10-08&date_order__lt=2023-10-16 HTTP/1.1" 200 12787
+INFO 2023-10-15 22:54:46,567 basehttp 16844 15424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-15 22:55:47,365 basehttp 16844 15424 "GET /admin/mystore/order/?date_order__gte=2023-10-08&date_order__lt=2023-10-16 HTTP/1.1" 200 12787
+INFO 2023-10-15 22:59:03,339 basehttp 16844 15424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066

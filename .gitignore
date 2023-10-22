@@ -1,3 +1,6 @@
-../venv
-.idea
+/media/
+/static/
+/venv/
+*.sqlite3
 *.log
+*.pyc
